@@ -1,8 +1,15 @@
 // открыть\закрыть бургер-меню
-let burger = document.querySelector('.btn-burger');
-let menu = document.querySelector('.header__menu');
+const burger = document.querySelector('[data-burger]');
+const menu = document.querySelector('[data-menu]');
 let menuLink = document.querySelectorAll('.menu__link');
 let body = document.body;
+
+let closeMenu = function() {
+  burger.classList.remove('btn-burger-active');
+  burger.setAttribute("aria-label", 'Открыть меню');
+  menu.classList.remove('header__menu-active');
+  body.classList.remove('stop-scroll');
+}
 
 burger.addEventListener('click', function() {
   burger.classList.toggle('btn-burger-active');
@@ -18,53 +25,47 @@ burger.addEventListener('click', function() {
 });
 menuLink.forEach(function(e) {
   e.addEventListener('click', function() {
-    burger.classList.remove('btn-burger-active');
-    burger.setAttribute("aria-label", 'Открыть меню');
-    menu.classList.remove('header__menu-active');
-    body.classList.remove('stop-scroll');
+    closeMenu();
   });
 });
 document.addEventListener('click',
 function(el) {
   let target = el.target;
-  if(!target.closest('.header__burger')) {
-    burger.classList.remove('btn-burger-active');
-    burger.setAttribute("aria-label", 'Открыть меню');
-    burger.setAttribute("aria-expanded", false);
-    menu.classList.remove('header__menu-active');
-    body.classList.remove('stop-scroll');
+  if(!target.closest('[data-burger]')) {
+    closeMenu();
   }
-
 });
 
 // открыть\закрыть, отправить форму поиска
-let btnOpen = document.querySelector('.btn-search__open');
-let formSearch = document.querySelector('.form__search');
-let input = document.querySelector('.form__input-search');
-let btnClose = document.querySelector('.btn-close');
+const btnOpen = document.querySelector('[data-state-searchbar="open"]');
+const formSearch = document.querySelector('.form-searchbar');
+const input = document.querySelector('.form-searchbar__input');
+const btnClose = document.querySelector('[data-state-searchbar="close"]');
 
+let openSearchbar = function() {
+  formSearch.setAttribute('data-visible', '');
+  formSearch.setAttribute('aria-expanded', true);
+}
+
+let closeSearchbar = function() {
+  formSearch.removeAttribute('data-visible');
+  formSearch.setAttribute('aria-expanded', false);
+  input.value = '';
+}
 btnOpen.addEventListener('click', function() {
-  formSearch.classList.add('form__search-active');
-  btnOpen.setAttribute("aria-expanded", true);
+  openSearchbar();
 });
 
 btnClose.addEventListener('click', function() {
-  formSearch.classList.remove('form__search-active');
-  btnOpen.setAttribute("aria-expanded", false);
-  input.value = '';
+  closeSearchbar();
 });
 
 document.addEventListener('click',
 function(el) {
-  let target = el.target;
-  if(!target.closest('.header__search-bar')) {
-    formSearch.classList.remove('form__search-active');
-    btnOpen.setAttribute("aria-expanded", false);
-    input.value = '';
+  if(!el.target.closest('.header__searchbar')) {
+    closeSearchbar();
   }
-
 });
-
 
 // иницилизация slider-swiper
 const swiper = new Swiper('.slider__swiper', {
@@ -76,7 +77,6 @@ const swiper = new Swiper('.slider__swiper', {
     clickable: true,
     type: 'bullets',
   },
-
 
   keyboard: {
     enabled: true,
