@@ -6,8 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Проектные решения любой сложности. Проводим консультацию, привлекаем подрядчиков, составляем смету, инспектируем все этапы работ">
   <meta name="keywords" content="проект, заказать расчет">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"> -->
+  <link rel="stylesheet" href="libs/swiper-bundle.min.css">
+  <link rel="stylesheet" href="libs/accordion.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-media.css">
   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
@@ -187,8 +194,8 @@
 
       <section id="faq" class="faq section-bottom">
         <h2 class="section-title faq__title">Часто задаваемые вопросы</h2>
-        <ul class="faq__list list-reset">
-          <li class="faq__item">
+        <ul class="faq__list accordion list-reset">
+          <li class="faq__item ac">
             <div class="faq__question flex">
               <h3 class="subtitle faq__question_title">Из&nbsp;чего формируется конечная стоимость проекта?</h3>
               <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -196,7 +203,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"/>
               </svg>
             </div>
-            <div class="faq__answer">
+            <div class="faq__answer ac-panel">
               <p class="section-text">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас
                 к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть своевременно верифицированы.
                 Но&nbsp;высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А&nbsp;ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. И&nbsp;нет сомнений, что явные признаки победы институционализации призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть указаны как претенденты на&nbsp;роль ключевых факторов.</p>
@@ -206,7 +213,7 @@
             </div>
           </li>
 
-          <li class="faq__item">
+          <li class="faq__item ac">
             <div class="faq__question flex">
               <h3 class="subtitle faq__question_title">У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его доработать&nbsp;/ реализовать?</h3>
               <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -214,12 +221,12 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"/>
               </svg>
             </div>
-            <div class="faq__answer">
+            <div class="faq__answer ac-panel">
               <p class="section-text">Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Океана вскоре послушавшись о заманивший, на берегу свой, предупреждал даже переписывается текст оксмокс назад его предложения вдали! Океана взобравшись гор живет!</p>
             </div>
           </li>
 
-          <li class="faq__item">
+          <li class="faq__item ac">
             <div class="faq__question flex">
               <h3 class="subtitle faq__question_title">Я&nbsp;выбираю между разными компаниями. В&nbsp;чём ваше отличие?</h3>
                 <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -227,12 +234,12 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"/>
                 </svg>
             </div>
-            <div class="faq__answer">
+            <div class="faq__answer ac-panel">
               <p class="section-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis vitae aliquid mollitia perferendis quo eligendi ea ipsam dolorum consectetur labore esse perspiciatis, quae veritatis nemo aspernatur ducimus natus eum voluptas.</p>
             </div>
           </li>
 
-          <li class="faq__item">
+          <li class="faq__item ac">
             <div class="faq__question flex">
               <h3 class="subtitle faq__question_title">Могу&nbsp;ли я&nbsp;делегировать вам работу&nbsp;/ согласование с&nbsp;подрядчиком&nbsp;/ организацией?</h3>
                 <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -240,14 +247,14 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"/>
                 </svg>
             </div>
-            <div class="faq__answer">
+            <div class="faq__answer ac-panel">
               <p class="section-text">Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Океана вскоре послушавшись о заманивший, на берегу свой, предупреждал даже переписывается текст оксмокс назад его предложения вдали! Океана взобравшись гор живет!</p>
               <p class="section-text">Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Океана вскоре послушавшись о заманивший, на берегу свой, предупреждал даже переписывается текст оксмокс назад его предложения вдали! Океана взобравшись гор живет!</p>
               <p class="section-text"></p>
             </div>
           </li>
 
-          <li class="faq__item">
+          <li class="faq__item ac">
             <div class="faq__question flex">
               <h3 class="subtitle faq__question_title">Могу&nbsp;ли я&nbsp;вернуть деньги на&nbsp;каком-либо из&nbsp;этапов работ?</h3>
                 <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -255,7 +262,7 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"/>
                 </svg>
             </div>
-            <div class="faq__answer">
+            <div class="faq__answer ac-panel">
               <p class="section-text">Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Океана вскоре послушавшись о заманивший, на берегу свой, предупреждал даже переписывается текст оксмокс назад его предложения вдали! Океана взобравшись гор живет!</p>
               <p class="section-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur iste a quisquam illum deleniti eveniet, dolorem esse saepe architecto. Voluptatibus aliquam ipsa dicta quos unde nulla eos vero eaque ipsum.</p>
             </div>
@@ -269,7 +276,7 @@
   <footer class="footer">
     <div class="footer__container container flex footer__wrapper">
       <div class="footer__left flex">
-          <a class="footer__logo" href="" tabindex="-1">
+          <a class="footer__logo" href="/" tabindex="-1">
             <img src="./img/footer/footer-logo.svg" alt="Евклид Проектные системы">
           </a>
           <nav class="footer__menu">
@@ -344,11 +351,12 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <!-- <script src="/node_modules/wicg-inert/dist/inert.min.js"></script> -->
-  <script src="./js/main.js"></script>
+  <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+  <!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
+  <script src="libs/swiper-bundle.min.js"></script>
+  <script src="libs/accordion.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>

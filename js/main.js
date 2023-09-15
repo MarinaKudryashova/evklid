@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function(){
 // открыть\закрыть бургер-меню
 const burger = document.querySelector('[data-burger]');
 const menu = document.querySelector('[data-menu]');
@@ -114,16 +115,25 @@ tabsBtn.forEach(function(btn) {
     });
   });
 });
-
-// jQuery-accordion
-$(function () {
-  $(".faq__list").accordion({
-      collapsible: true,
-      // active: false,
-      heightStyle: "content",
-      animate: 300,
-      icons: false,
-  });
-
+// иницилизация accordion
+const accordions = Array.from(document.querySelectorAll('.accordion'));
+new Accordion(accordions, {
+  duration: 400,
+  collapse: true,
+  elementClass: 'faq__item',
+  triggerClass: 'faq__question',
+  panelClass: 'faq__answer',
+  openOnInit: [0],
 });
+// jQuery-accordion
+// $(function () {
+//   $(".faq__list").accordion({
+//       collapsible: true,
+//       // active: false,
+//       heightStyle: "content",
+//       animate: 300,
+//       icons: false,
+//   });
 
+// });
+});
