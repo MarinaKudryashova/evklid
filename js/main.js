@@ -118,22 +118,11 @@ tabsBtn.forEach(function(btn) {
 // иницилизация accordion
 const accordions = Array.from(document.querySelectorAll('.accordion'));
 new Accordion(accordions, {
-  duration: 400,
+  duration: 300,
   collapse: true,
-  elementClass: 'faq__item',
-  triggerClass: 'faq__question',
-  panelClass: 'faq__answer',
+  elementClass: 'accordion__item',
+  triggerClass: 'accordion__header',
+  panelClass: 'accordion__body',
   openOnInit: [0],
 });
-// jQuery-accordion
-// $(function () {
-//   $(".faq__list").accordion({
-//       collapsible: true,
-//       // active: false,
-//       heightStyle: "content",
-//       animate: 300,
-//       icons: false,
-//   });
-
-// });
 });

@@ -37,9 +37,9 @@
     <circle fill="none" cx="12" cy="12" r="11" stroke-width="2"></circle>
   </symbol>
 
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" id="+х">
-    <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"></ellipse>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"></path>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" id="x">
+    <ellipse cx="25" cy="25" rx="25" ry="25" fill="var(--color-ellipse)"></ellipse>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="var(--color-path)"></path>
   </symbol>
 
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 72" id="footer-logo">
