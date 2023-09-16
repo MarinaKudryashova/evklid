@@ -28,7 +28,7 @@
         <span class="btn-burger__lines"></span>
       </button>
       <a class="header__logo" href="/" tabindex="-1">
-        <svg class="logo-icon" width="100%" height="100%" alt="логотип сайта Евклид Проектные системы">
+        <svg class="logo-icon" width="100%" height="100%" >
           <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
       </a>
@@ -321,23 +321,20 @@
       </div>
 
       <form class="footer__form footer-form flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
-        <fieldset>
-          <legend class="footer-form__title section-title">Оставить заявку</legend>
-          <div class="footer-form__top flex">
-            <input class="footer-form__input section-text" type="text" name="fullname" id="fullname" placeholder="Фамилия, имя и&nbsp;отчество*">
-            <input class="footer-form__input section-text" type="email" name="email" id="email" placeholder="E-mail*">
-            <textarea class="footer-form__input input-area section-text" name="message" id="message" placeholder="Сообщение" cols="30" rows="10"></textarea>
-          </div>
-          <div class="footer-form__bottom flex">
-            <input class="btn btn-submit" type="submit" value="Отправить данные">
-            <label class="check section-text">
-              <input class="check__input" type="checkbox" name="agree" id="agree" checked>
-              <span role="checkbox" aria-checked="true" tabindex="0" class="cheсkbox"></span>
-              Согласен на обработку данных
-            </label>
-          </div>
-        </fieldset>
-
+        <h2 class="footer-form__title section-title">Оставить заявку</h2>
+        <div class="footer-form__top flex">
+          <input class="footer-form__input section-text" type="text" name="fullname" id="fullname" placeholder="Фамилия, имя и&nbsp;отчество*">
+          <input class="footer-form__input section-text" type="email" name="email" id="email" placeholder="E-mail*">
+          <textarea class="footer-form__input input-area section-text" name="message" id="message" placeholder="Сообщение" cols="30" rows="10"></textarea>
+        </div>
+        <div class="footer-form__bottom flex">
+          <input class="btn btn-submit" type="submit" value="Отправить данные">
+          <label class="check section-text">
+            <input class="check__input" type="checkbox" name="agree" id="agree" checked>
+            <span role="checkbox" aria-checked="true" tabindex="0" class="cheсkbox"></span>
+            Согласен на обработку данных
+          </label>
+        </div>
       </form>
 
       <p class="footer__right section-text">
